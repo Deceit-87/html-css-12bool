@@ -4,13 +4,16 @@
     box-sizing: border-box;
 
 }
-
+section{
+  padding: 25px 0;
+}
 .body {
   width: 1320px;
 }
 
 .row{
   display: flex;
+  width: 100%;
 }
 
 * [class*="col"] {
@@ -30,7 +33,7 @@ visibility: hidden;
 }
 
 
-.nested{
+[class*="col"] [class*="col"]{
   background-color: #00E165;
   white-space: nowrap;
   border: none;
