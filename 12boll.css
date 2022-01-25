@@ -13,7 +13,7 @@
   display: flex;
 }
 
-* [class^="col"] {
+* [class*="col"] {
   background-color: #006CFA;
   color: white;
   border: 1px solid white;
@@ -22,14 +22,21 @@
   display: flex;
   justify-content: center;
   padding:5px;
+  min-height: 35px;
 
 }
+* [class*="col-offset"]{
+visibility: hidden;
+}
+
+
 .nested{
   background-color: #00E165;
   white-space: nowrap;
   border: none;
   margin: 1px;
 }
+
 
         /* FRAMEWORK */
 
@@ -112,6 +119,24 @@
 .col-offset-12{
    width:calc(100% / 12 * 12)
             }
+
+
+
+
+.fd-r-reverse{
+  flex-direction: row-reverse;
+}
+
+
+.justify-start{
+justify-content: start;
+}
+.justify-center{
+  justify-content: center;
+  }
+  .justify-end{
+    justify-content: end;
+    }
 
 .justify-around{
   justify-content: space-around;
